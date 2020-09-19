@@ -1,6 +1,6 @@
-$(document).on(ready, function(){
+$(document).ready(function(){
     $('#mycarousel').carousel({ interval: 2000});
-    $("#carouselButton").on(click, function(){
+    $("#carouselButton").click(function(){
         if ($("#carouselButton").children("span").hasClass('fa-pause')) {
             $("#mycarousel").carousel('pause');
             $("#carouselButton").children("span").removeClass('fa-pause');
@@ -14,20 +14,20 @@ $(document).on(ready, function(){
     });
 });
 //JavaScript code for the reserve table modal
-$(document).on(ready, function(){
-    $("#buttonTable").on(click,function(){
+$(document).ready(function(){
+    $("#buttonTable").click(function(){
         $("#tableModal").modal('toggle')
     });
-    $("#closeTable").on(click, function(){
+    $("#closeTable").click(function(){
         $("#tableModal").modal('hide')
     });
 });
 //JavaScript code for the login modal
-$(document).on(ready, function(){
-    $("#loginLink").on(click, function(){
+$(document).ready(function(){
+    $("#loginLink").click(function(){
         $("#loginModal").modal('toggle')
     });
-   $("#closeCard").on(click, function(){
+   $("#closeCard").click(function(){
         $("#loginModal").modal('hide')
     });
 });
